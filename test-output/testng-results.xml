@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-11T18:42:25 GMT" name="Default suite" finished-at="2025-11-11T18:42:25 GMT" duration-ms="75">
+  <suite started-at="2025-11-18T17:59:56 GMT" name="Default suite" finished-at="2025-11-18T17:59:56 GMT" duration-ms="136">
     <groups>
     </groups>
-    <test started-at="2025-11-11T18:42:25 GMT" name="Default test" finished-at="2025-11-11T18:42:25 GMT" duration-ms="75">
-      <class name="cs265.ConcertTicketDTTest">
-        <test-method signature="test(java.lang.String,int,boolean,int)[pri:0, instance:cs265.ConcertTicketDTTest@49139829]" started-at="2025-11-11T18:42:25 GMT" name="test" data-provider="data" finished-at="2025-11-11T18:42:25 GMT" duration-ms="18" status="PASS">
+    <test started-at="2025-11-18T17:59:56 GMT" name="Default test" finished-at="2025-11-18T17:59:56 GMT" duration-ms="136">
+      <class name="cs265.CS265_Lab_W08Test">
+        <test-method signature="isPalindromeTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:cs265.CS265_Lab_W08Test@452ba1db]" started-at="2025-11-18T17:59:56 GMT" name="isPalindromeTest" data-provider="data" finished-at="2025-11-18T17:59:56 GMT" duration-ms="23" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[T2.1]]>
+                <![CDATA[1]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[16]]>
+                <![CDATA[Anna]]>
               </value>
             </param>
             <param index="2">
@@ -24,25 +24,20 @@
                 <![CDATA[true]]>
               </value>
             </param>
-            <param index="3">
-              <value>
-                <![CDATA[-1]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,int,boolean,int)[pri:0, instance:cs265.ConcertTicketDTTest@49139829]" started-at="2025-11-11T18:42:25 GMT" name="test" data-provider="data" finished-at="2025-11-11T18:42:25 GMT" duration-ms="2" status="PASS">
+        </test-method> <!-- isPalindromeTest -->
+        <test-method signature="isPalindromeTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:cs265.CS265_Lab_W08Test@452ba1db]" started-at="2025-11-18T17:59:56 GMT" name="isPalindromeTest" data-provider="data" finished-at="2025-11-18T17:59:56 GMT" duration-ms="9" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[T2.2]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[40]]>
+                <![CDATA[Hello]]>
               </value>
             </param>
             <param index="2">
@@ -50,25 +45,63 @@
                 <![CDATA[true]]>
               </value>
             </param>
-            <param index="3">
-              <value>
-                <![CDATA[55]]>
-              </value>
-            </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1079)
+at org.testng.Assert.assertEquals(Assert.java:1043)
+at org.testng.Assert.assertEquals(Assert.java:1089)
+at cs265.CS265_Lab_W08Test.isPalindromeTest(CS265_Lab_W08Test.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,int,boolean,int)[pri:0, instance:cs265.ConcertTicketDTTest@49139829]" started-at="2025-11-11T18:42:25 GMT" name="test" data-provider="data" finished-at="2025-11-11T18:42:25 GMT" duration-ms="1" status="PASS">
+        </test-method> <!-- isPalindromeTest -->
+        <test-method signature="isPalindromeTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:cs265.CS265_Lab_W08Test@452ba1db]" started-at="2025-11-18T17:59:56 GMT" name="isPalindromeTest" data-provider="data" finished-at="2025-11-18T17:59:56 GMT" duration-ms="2" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[T2.3]]>
+                <![CDATA[3]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[20]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="2">
@@ -76,94 +109,118 @@
                 <![CDATA[true]]>
               </value>
             </param>
-            <param index="3">
-              <value>
-                <![CDATA[35]]>
-              </value>
-            </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1079)
+at org.testng.Assert.assertEquals(Assert.java:1043)
+at org.testng.Assert.assertEquals(Assert.java:1089)
+at cs265.CS265_Lab_W08Test.isPalindromeTest(CS265_Lab_W08Test.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,int,boolean,int)[pri:0, instance:cs265.ConcertTicketDTTest@49139829]" started-at="2025-11-11T18:42:25 GMT" name="test" data-provider="data" finished-at="2025-11-11T18:42:25 GMT" duration-ms="1" status="PASS">
+        </test-method> <!-- isPalindromeTest -->
+        <test-method signature="isPalindromeTest(java.lang.String,java.lang.String,boolean)[pri:0, instance:cs265.CS265_Lab_W08Test@452ba1db]" started-at="2025-11-18T17:59:56 GMT" name="isPalindromeTest" data-provider="data" finished-at="2025-11-18T17:59:56 GMT" duration-ms="2" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[T2.4]]>
+                <![CDATA[4]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[100]]>
+                <![CDATA[$]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[-1]]>
+                <![CDATA[true]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1079)
+at org.testng.Assert.assertEquals(Assert.java:1043)
+at org.testng.Assert.assertEquals(Assert.java:1089)
+at cs265.CS265_Lab_W08Test.isPalindromeTest(CS265_Lab_W08Test.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,int,boolean,int)[pri:0, instance:cs265.ConcertTicketDTTest@49139829]" started-at="2025-11-11T18:42:25 GMT" name="test" data-provider="data" finished-at="2025-11-11T18:42:25 GMT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[T2.5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[40]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[65]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String,int,boolean,int)[pri:0, instance:cs265.ConcertTicketDTTest@49139829]" started-at="2025-11-11T18:42:25 GMT" name="test" data-provider="data" finished-at="2025-11-11T18:42:25 GMT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[T2.6]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[40]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- cs265.ConcertTicketDTTest -->
+        </test-method> <!-- isPalindromeTest -->
+      </class> <!-- cs265.CS265_Lab_W08Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
