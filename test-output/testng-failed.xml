@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="cs265.CS265_Lab_W08Test">
+      <class name="cs265.BingeBarTest">
         <methods>
-          <include name="isPalindromeTest" invocation-numbers="1 2 3"/>
+          <include name="test" invocation-numbers="9"/>
         </methods>
-      </class> <!-- cs265.CS265_Lab_W08Test -->
+      </class> <!-- cs265.BingeBarTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
